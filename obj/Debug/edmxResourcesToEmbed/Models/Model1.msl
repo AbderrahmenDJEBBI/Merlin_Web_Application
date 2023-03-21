@@ -1,0 +1,1372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Merlin_DataModelStoreContainer" CdmEntityContainer="Merlin_DataEntities">
+    <EntitySetMapping Name="AccessGroup">
+      <EntityTypeMapping TypeName="Merlin_DataModel.AccessGroup">
+        <MappingFragment StoreEntitySet="AccessGroup">
+          <ScalarProperty Name="AcessGroupID" ColumnName="AcessGroupID" />
+          <ScalarProperty Name="AcessGroupName" ColumnName="AcessGroupName" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Address">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Address">
+        <MappingFragment StoreEntitySet="Address">
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="Town" ColumnName="Town" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactPhone" ColumnName="ContactPhone" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AddressType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.AddressType">
+        <MappingFragment StoreEntitySet="AddressType">
+          <ScalarProperty Name="AddressTypeID" ColumnName="AddressTypeID" />
+          <ScalarProperty Name="AddressTypeName" ColumnName="AddressTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CancellationReason">
+      <EntityTypeMapping TypeName="Merlin_DataModel.CancellationReason">
+        <MappingFragment StoreEntitySet="CancellationReason">
+          <ScalarProperty Name="CancellationReasonID" ColumnName="CancellationReasonID" />
+          <ScalarProperty Name="CancellationReason1" ColumnName="CancellationReason1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colour">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Colour">
+        <MappingFragment StoreEntitySet="Colour">
+          <ScalarProperty Name="ColourID" ColumnName="ColourID" />
+          <ScalarProperty Name="ColourName" ColumnName="ColourName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Credit">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Credit">
+        <MappingFragment StoreEntitySet="Credit">
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CreditReasonID" ColumnName="CreditReasonID" />
+          <ScalarProperty Name="PalletMovementID" ColumnName="PalletMovementID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="CreditorPayment" ColumnName="CreditorPayment" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PaymentRef" ColumnName="PaymentRef" />
+          <ScalarProperty Name="WholeInvoiceAmount" ColumnName="WholeInvoiceAmount" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Cancel" ColumnName="Cancel" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="PayCrID" ColumnName="PayCrID" />
+          <ScalarProperty Name="InternalAdjustment" ColumnName="InternalAdjustment" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="Allocated" ColumnName="Allocated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditReason">
+      <EntityTypeMapping TypeName="Merlin_DataModel.CreditReason">
+        <MappingFragment StoreEntitySet="CreditReason">
+          <ScalarProperty Name="CreditReasonID" ColumnName="CreditReasonID" />
+          <ScalarProperty Name="CreditReasonName" ColumnName="CreditReasonName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currency">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="DefaultXRate" ColumnName="DefaultXRate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customer">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerRef" ColumnName="CustomerRef" />
+          <ScalarProperty Name="CustomerTypeID" ColumnName="CustomerTypeID" />
+          <ScalarProperty Name="StandardPriceList" ColumnName="StandardPriceList" />
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="CustomerNotes" ColumnName="CustomerNotes" />
+          <ScalarProperty Name="CustomerComments" ColumnName="CustomerComments" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CustomerVATNumber" ColumnName="CustomerVATNumber" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="ContactTelephone" ColumnName="ContactTelephone" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="OnHold" ColumnName="OnHold" />
+          <ScalarProperty Name="DateonHold" ColumnName="DateonHold" />
+          <ScalarProperty Name="OnHoldReason" ColumnName="OnHoldReason" />
+          <ScalarProperty Name="TermsDiscountPercentage" ColumnName="TermsDiscountPercentage" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CustomerGroupID" ColumnName="CustomerGroupID" />
+          <ScalarProperty Name="CollectionPoint" ColumnName="CollectionPoint" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerGroup">
+      <EntityTypeMapping TypeName="Merlin_DataModel.CustomerGroup">
+        <MappingFragment StoreEntitySet="CustomerGroup">
+          <ScalarProperty Name="CustomerGroupID" ColumnName="CustomerGroupID" />
+          <ScalarProperty Name="CustomerGroupName" ColumnName="CustomerGroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.CustomerType">
+        <MappingFragment StoreEntitySet="CustomerType">
+          <ScalarProperty Name="CustomerTypeID" ColumnName="CustomerTypeID" />
+          <ScalarProperty Name="CustomerTypeName" ColumnName="CustomerTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealNumber">
+      <EntityTypeMapping TypeName="Merlin_DataModel.DealNumber">
+        <MappingFragment StoreEntitySet="DealNumber">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DealNumber1" ColumnName="DealNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DealType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.DealType">
+        <MappingFragment StoreEntitySet="DealType">
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+          <ScalarProperty Name="DealTypeName" ColumnName="DealTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DispatchMethod">
+      <EntityTypeMapping TypeName="Merlin_DataModel.DispatchMethod">
+        <MappingFragment StoreEntitySet="DispatchMethod">
+          <ScalarProperty Name="DispatchMethodID" ColumnName="DispatchMethodID" />
+          <ScalarProperty Name="DispatchMethodName" ColumnName="DispatchMethodName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Feature">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Feature">
+        <MappingFragment StoreEntitySet="Feature">
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="FeatureName" ColumnName="FeatureName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Haulier">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Haulier">
+        <MappingFragment StoreEntitySet="Haulier">
+          <ScalarProperty Name="HaulierID" ColumnName="HaulierID" />
+          <ScalarProperty Name="HaulierName" ColumnName="HaulierName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Invoice">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoice">
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="InvoiceTypeID" ColumnName="InvoiceTypeID" />
+          <ScalarProperty Name="InvoiceStatusID" ColumnName="InvoiceStatusID" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Transport" ColumnName="Transport" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="VATRate" ColumnName="VATRate" />
+          <ScalarProperty Name="InvoiceTotal" ColumnName="InvoiceTotal" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="DiscountValue" ColumnName="DiscountValue" />
+          <ScalarProperty Name="EarlyDiscountPaymentDate" ColumnName="EarlyDiscountPaymentDate" />
+          <ScalarProperty Name="DiscountApplied" ColumnName="DiscountApplied" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="InvoiceLineNotes" ColumnName="InvoiceLineNotes" />
+          <ScalarProperty Name="InvoiceNotes" ColumnName="InvoiceNotes" />
+          <ScalarProperty Name="DateDue" ColumnName="DateDue" />
+          <ScalarProperty Name="DatePaid" ColumnName="DatePaid" />
+          <ScalarProperty Name="Paid" ColumnName="Paid" />
+          <ScalarProperty Name="NumberofPallets" ColumnName="NumberofPallets" />
+          <ScalarProperty Name="PalletDeposit" ColumnName="PalletDeposit" />
+          <ScalarProperty Name="Sent" ColumnName="Sent" />
+          <ScalarProperty Name="InternalCorrection" ColumnName="InternalCorrection" />
+          <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+          <ScalarProperty Name="Printed" ColumnName="Printed" />
+          <ScalarProperty Name="Emailed" ColumnName="Emailed" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SubTotalWithoutVAT" ColumnName="SubTotalWithoutVAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceDetail">
+      <EntityTypeMapping TypeName="Merlin_DataModel.InvoiceDetail">
+        <MappingFragment StoreEntitySet="InvoiceDetail">
+          <ScalarProperty Name="InvoiceLineID" ColumnName="InvoiceLineID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricingUnit" ColumnName="PricingUnit" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Cost" ColumnName="Cost" />
+          <ScalarProperty Name="LineType" ColumnName="LineType" />
+          <ScalarProperty Name="LineDescription" ColumnName="LineDescription" />
+          <ScalarProperty Name="DetailType" ColumnName="DetailType" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="ItemPerPallet" ColumnName="ItemPerPallet" />
+          <ScalarProperty Name="OrderDetailID" ColumnName="OrderDetailID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceStatus">
+      <EntityTypeMapping TypeName="Merlin_DataModel.InvoiceStatus">
+        <MappingFragment StoreEntitySet="InvoiceStatus">
+          <ScalarProperty Name="InvoiceStatusID" ColumnName="InvoiceStatusID" />
+          <ScalarProperty Name="InvoiceStatusName" ColumnName="InvoiceStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InvoiceType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.InvoiceType">
+        <MappingFragment StoreEntitySet="InvoiceType">
+          <ScalarProperty Name="InvoiceTypeID" ColumnName="InvoiceTypeID" />
+          <ScalarProperty Name="InvoiceTypeName" ColumnName="InvoiceTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NeckFinish">
+      <EntityTypeMapping TypeName="Merlin_DataModel.NeckFinish">
+        <MappingFragment StoreEntitySet="NeckFinish">
+          <ScalarProperty Name="NeckFinishID" ColumnName="NeckFinishID" />
+          <ScalarProperty Name="NeckFinishName" ColumnName="NeckFinishName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OldPasswords">
+      <EntityTypeMapping TypeName="Merlin_DataModel.OldPasswords">
+        <MappingFragment StoreEntitySet="OldPasswords">
+          <ScalarProperty Name="PasswordChangeID" ColumnName="PasswordChangeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OldPassword" ColumnName="OldPassword" />
+          <ScalarProperty Name="NewPassword" ColumnName="NewPassword" />
+          <ScalarProperty Name="ChangeDate" ColumnName="ChangeDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Order">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Order">
+        <MappingFragment StoreEntitySet="Order">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+          <ScalarProperty Name="CustomerOrderReference" ColumnName="CustomerOrderReference" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="HaulierID" ColumnName="HaulierID" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CollectionReference" ColumnName="CollectionReference" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Transport" ColumnName="Transport" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="DiscountValue" ColumnName="DiscountValue" />
+          <ScalarProperty Name="EarlyDiscountPaymentDate" ColumnName="EarlyDiscountPaymentDate" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="DiscountApplied" ColumnName="DiscountApplied" />
+          <ScalarProperty Name="DispatchMethodID" ColumnName="DispatchMethodID" />
+          <ScalarProperty Name="OrderNotes" ColumnName="OrderNotes" />
+          <ScalarProperty Name="DateCancelled" ColumnName="DateCancelled" />
+          <ScalarProperty Name="CancellationReasonID" ColumnName="CancellationReasonID" />
+          <ScalarProperty Name="CancellationNote" ColumnName="CancellationNote" />
+          <ScalarProperty Name="OrderIssues" ColumnName="OrderIssues" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Release" ColumnName="Release" />
+          <ScalarProperty Name="Reg" ColumnName="Reg" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SupplierDepotID" ColumnName="SupplierDepotID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetail">
+      <EntityTypeMapping TypeName="Merlin_DataModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="OrderLineID" ColumnName="OrderLineID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricingUnit" ColumnName="PricingUnit" />
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="StandardPrice" ColumnName="StandardPrice" />
+          <ScalarProperty Name="LineDiscount" ColumnName="LineDiscount" />
+          <ScalarProperty Name="LineTotal" ColumnName="LineTotal" />
+          <ScalarProperty Name="LineDescription" ColumnName="LineDescription" />
+          <ScalarProperty Name="DetailType" ColumnName="DetailType" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+          <ScalarProperty Name="Sequence" ColumnName="Sequence" />
+          <ScalarProperty Name="PerPallet" ColumnName="PerPallet" />
+          <ScalarProperty Name="PalletCount" ColumnName="PalletCount" />
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="OriginalQuantity" ColumnName="OriginalQuantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderStatus">
+      <EntityTypeMapping TypeName="Merlin_DataModel.OrderStatus">
+        <MappingFragment StoreEntitySet="OrderStatus">
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="OrderStatusName" ColumnName="OrderStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PalletMovement">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PalletMovement">
+        <MappingFragment StoreEntitySet="PalletMovement">
+          <ScalarProperty Name="PalletMovementID" ColumnName="PalletMovementID" />
+          <ScalarProperty Name="PalletMovementTypeID" ColumnName="PalletMovementTypeID" />
+          <ScalarProperty Name="MovementDate" ColumnName="MovementDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+          <ScalarProperty Name="CreditID" ColumnName="CreditID" />
+          <ScalarProperty Name="PalletQuantity" ColumnName="PalletQuantity" />
+          <ScalarProperty Name="PalletPrice" ColumnName="PalletPrice" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="DeliveryNote" ColumnName="DeliveryNote" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="Delivered" ColumnName="Delivered" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="ReturnedToSupplier" ColumnName="ReturnedToSupplier" />
+          <ScalarProperty Name="SupplierReturnRef" ColumnName="SupplierReturnRef" />
+          <ScalarProperty Name="CustomerSupplier" ColumnName="CustomerSupplier" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PalletMovementType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PalletMovementType">
+        <MappingFragment StoreEntitySet="PalletMovementType">
+          <ScalarProperty Name="PalletMovementTypeID" ColumnName="PalletMovementTypeID" />
+          <ScalarProperty Name="PalletMovementTypeName" ColumnName="PalletMovementTypeName" />
+          <ScalarProperty Name="AddToBalance" ColumnName="AddToBalance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartielCredit">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PartielCredit">
+        <MappingFragment StoreEntitySet="PartielCredit">
+          <ScalarProperty Name="PartielCreditID" ColumnName="PartielCreditID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PasswordPolicy">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PasswordPolicy">
+        <MappingFragment StoreEntitySet="PasswordPolicy">
+          <ScalarProperty Name="PasswordPolicyID" ColumnName="PasswordPolicyID" />
+          <ScalarProperty Name="MinumumLength" ColumnName="MinumumLength" />
+          <ScalarProperty Name="MixedCase" ColumnName="MixedCase" />
+          <ScalarProperty Name="MustUseNumbers" ColumnName="MustUseNumbers" />
+          <ScalarProperty Name="MustUseSpecialCharacters" ColumnName="MustUseSpecialCharacters" />
+          <ScalarProperty Name="ForceChangeAfterReset" ColumnName="ForceChangeAfterReset" />
+          <ScalarProperty Name="ExpireAfter" ColumnName="ExpireAfter" />
+          <ScalarProperty Name="GiveWarning" ColumnName="GiveWarning" />
+          <ScalarProperty Name="ReuseAfterXChanges" ColumnName="ReuseAfterXChanges" />
+          <ScalarProperty Name="ReuseAfterXDays" ColumnName="ReuseAfterXDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Payment">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Payment">
+        <MappingFragment StoreEntitySet="Payment">
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="PaymentReference" ColumnName="PaymentReference" />
+          <ScalarProperty Name="PaymentDirection" ColumnName="PaymentDirection" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="InternalAdjustment" ColumnName="InternalAdjustment" />
+          <ScalarProperty Name="Reversed" ColumnName="Reversed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentAllocation">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PaymentAllocation">
+        <MappingFragment StoreEntitySet="PaymentAllocation">
+          <ScalarProperty Name="AllocationID" ColumnName="AllocationID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="Reversed" ColumnName="Reversed" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethod">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethod">
+          <ScalarProperty Name="PaymentMethodID" ColumnName="PaymentMethodID" />
+          <ScalarProperty Name="PaymentMethodName" ColumnName="PaymentMethodName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Permission">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Permission">
+        <MappingFragment StoreEntitySet="Permission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="ScreenName" ColumnName="ScreenName" />
+          <ScalarProperty Name="Office" ColumnName="Office" />
+          <ScalarProperty Name="Finance" ColumnName="Finance" />
+          <ScalarProperty Name="Warehouse" ColumnName="Warehouse" />
+          <ScalarProperty Name="Admin" ColumnName="Admin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriceList">
+      <EntityTypeMapping TypeName="Merlin_DataModel.PriceList">
+        <MappingFragment StoreEntitySet="PriceList">
+          <ScalarProperty Name="PriceID" ColumnName="PriceID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SupplierDepotID" ColumnName="SupplierDepotID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="EffectiveFromDate" ColumnName="EffectiveFromDate" />
+          <ScalarProperty Name="DateChanged" ColumnName="DateChanged" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="Editedby" ColumnName="Editedby" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Agreed" ColumnName="Agreed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Product">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="ProductGroupID" ColumnName="ProductGroupID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="NeckFinishID" ColumnName="NeckFinishID" />
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="AECID" ColumnName="AECID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="PriceUnit" ColumnName="PriceUnit" />
+          <ScalarProperty Name="PerPallet" ColumnName="PerPallet" />
+          <ScalarProperty Name="PalletID" ColumnName="PalletID" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="InactiveNotes" ColumnName="InactiveNotes" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="WeightID" ColumnName="WeightID" />
+          <ScalarProperty Name="ColourID" ColumnName="ColourID" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductGroup">
+      <EntityTypeMapping TypeName="Merlin_DataModel.ProductGroup">
+        <MappingFragment StoreEntitySet="ProductGroup">
+          <ScalarProperty Name="ProductGroupID" ColumnName="ProductGroupID" />
+          <ScalarProperty Name="StockTypeID" ColumnName="StockTypeID" />
+          <ScalarProperty Name="ProductGroupName" ColumnName="ProductGroupName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shipment">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Shipment">
+        <MappingFragment StoreEntitySet="Shipment">
+          <ScalarProperty Name="ShipmentID" ColumnName="ShipmentID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="ShipmentStatusID" ColumnName="ShipmentStatusID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="DatePicked" ColumnName="DatePicked" />
+          <ScalarProperty Name="DateDispatched" ColumnName="DateDispatched" />
+          <ScalarProperty Name="DateDelivered" ColumnName="DateDelivered" />
+          <ScalarProperty Name="DateCancelled" ColumnName="DateCancelled" />
+          <ScalarProperty Name="Printed" ColumnName="Printed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipmentItem">
+      <EntityTypeMapping TypeName="Merlin_DataModel.ShipmentItem">
+        <MappingFragment StoreEntitySet="ShipmentItem">
+          <ScalarProperty Name="ShipmentItemID" ColumnName="ShipmentItemID" />
+          <ScalarProperty Name="QtyPicked" ColumnName="QtyPicked" />
+          <ScalarProperty Name="QtyDelivered" ColumnName="QtyDelivered" />
+          <ScalarProperty Name="ItemPerPallet" ColumnName="ItemPerPallet" />
+          <ScalarProperty Name="PltsPicked" ColumnName="PltsPicked" />
+          <ScalarProperty Name="InvoiceLineID" ColumnName="InvoiceLineID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShipmentStatus">
+      <EntityTypeMapping TypeName="Merlin_DataModel.ShipmentStatus">
+        <MappingFragment StoreEntitySet="ShipmentStatus">
+          <ScalarProperty Name="ShipmentStatusID" ColumnName="ShipmentStatusID" />
+          <ScalarProperty Name="ShipmentStatusName" ColumnName="ShipmentStatusName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Size">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Size">
+        <MappingFragment StoreEntitySet="Size">
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="SizeDescription" ColumnName="SizeDescription" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Stock">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Stock">
+        <MappingFragment StoreEntitySet="Stock">
+          <ScalarProperty Name="StockID" ColumnName="StockID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="OnHand" ColumnName="OnHand" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="LockedBy" ColumnName="LockedBy" />
+          <ScalarProperty Name="LockedOn" ColumnName="LockedOn" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockComments">
+      <EntityTypeMapping TypeName="Merlin_DataModel.StockComments">
+        <MappingFragment StoreEntitySet="StockComments">
+          <ScalarProperty Name="StockCommentID" ColumnName="StockCommentID" />
+          <ScalarProperty Name="InvoiceItemID" ColumnName="InvoiceItemID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="CommentDate" ColumnName="CommentDate" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="Removed" ColumnName="Removed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockMovements">
+      <EntityTypeMapping TypeName="Merlin_DataModel.StockMovements">
+        <MappingFragment StoreEntitySet="StockMovements">
+          <ScalarProperty Name="StockMovementID" ColumnName="StockMovementID" />
+          <ScalarProperty Name="StockMovementTypeID" ColumnName="StockMovementTypeID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="ItemsPerPallet" ColumnName="ItemsPerPallet" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="MovementDate" ColumnName="MovementDate" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DeliveredOrCollected" ColumnName="DeliveredOrCollected" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockMovementType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.StockMovementType">
+        <MappingFragment StoreEntitySet="StockMovementType">
+          <ScalarProperty Name="StockMovementTypeID" ColumnName="StockMovementTypeID" />
+          <ScalarProperty Name="StockMovementTypeName" ColumnName="StockMovementTypeName" />
+          <ScalarProperty Name="InOut" ColumnName="InOut" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StockType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.StockType">
+        <MappingFragment StoreEntitySet="StockType">
+          <ScalarProperty Name="StockTypeID" ColumnName="StockTypeID" />
+          <ScalarProperty Name="StockTypeName" ColumnName="StockTypeName" />
+          <ScalarProperty Name="AllowDiscount" ColumnName="AllowDiscount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Supplier">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Supplier">
+        <MappingFragment StoreEntitySet="Supplier">
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="LandlineNumber" ColumnName="LandlineNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="VATNo" ColumnName="VATNo" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SupplierDepot">
+      <EntityTypeMapping TypeName="Merlin_DataModel.SupplierDepot">
+        <MappingFragment StoreEntitySet="SupplierDepot">
+          <ScalarProperty Name="SupplierDepotID" ColumnName="SupplierDepotID" />
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="AdressLine1" ColumnName="AdressLine1" />
+          <ScalarProperty Name="AdressLine2" ColumnName="AdressLine2" />
+          <ScalarProperty Name="AdressLine3" ColumnName="AdressLine3" />
+          <ScalarProperty Name="County" ColumnName="County" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="DefaultPallet" ColumnName="DefaultPallet" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="Depot" ColumnName="Depot" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TempStatements">
+      <EntityTypeMapping TypeName="Merlin_DataModel.TempStatements">
+        <MappingFragment StoreEntitySet="TempStatements">
+          <ScalarProperty Name="StatementID" ColumnName="StatementID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StatementDate" ColumnName="StatementDate" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="sent" ColumnName="sent" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="printed" ColumnName="printed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="Merlin_DataModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="SurName" ColumnName="SurName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="DefaultPrinter" ColumnName="DefaultPrinter" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VATRate">
+      <EntityTypeMapping TypeName="Merlin_DataModel.VATRate">
+        <MappingFragment StoreEntitySet="VATRate">
+          <ScalarProperty Name="VATRateID" ColumnName="VATRateID" />
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="VATRate1" ColumnName="VATRate1" />
+          <ScalarProperty Name="EffectiveFromDate" ColumnName="EffectiveFromDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VATType">
+      <EntityTypeMapping TypeName="Merlin_DataModel.VATType">
+        <MappingFragment StoreEntitySet="VATType">
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="VATTypeName" ColumnName="VATTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="weight">
+      <EntityTypeMapping TypeName="Merlin_DataModel.weight">
+        <MappingFragment StoreEntitySet="weight">
+          <ScalarProperty Name="WeightID" ColumnName="WeightID" />
+          <ScalarProperty Name="WeightDescription" ColumnName="WeightDescription" />
+          <ScalarProperty Name="Grams" ColumnName="Grams" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Client">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="PathID" ColumnName="PathID" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="Merlin_DataModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="AddressLine1" ColumnName="AddressLine1" />
+          <ScalarProperty Name="AddressLine2" ColumnName="AddressLine2" />
+          <ScalarProperty Name="AddressLine3" ColumnName="AddressLine3" />
+          <ScalarProperty Name="PostCode" ColumnName="PostCode" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="Bank1Name" ColumnName="Bank1Name" />
+          <ScalarProperty Name="Bank1AccountName" ColumnName="Bank1AccountName" />
+          <ScalarProperty Name="Bank1SortCode" ColumnName="Bank1SortCode" />
+          <ScalarProperty Name="Bank1AccountNo" ColumnName="Bank1AccountNo" />
+          <ScalarProperty Name="Bank1IBAN" ColumnName="Bank1IBAN" />
+          <ScalarProperty Name="BANK1Swift" ColumnName="BANK1Swift" />
+          <ScalarProperty Name="MaxInvoiceCreditAge" ColumnName="MaxInvoiceCreditAge" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AgeListing" FunctionName="Merlin_DataModel.Store.AgeListing">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.AgeListing_Result">
+          <ScalarProperty Name="customerRef" ColumnName="customerRef" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Over6" ColumnName="Over6" />
+          <ScalarProperty Name="Upto6" ColumnName="Upto6" />
+          <ScalarProperty Name="Upto5" ColumnName="Upto5" />
+          <ScalarProperty Name="Upto4" ColumnName="Upto4" />
+          <ScalarProperty Name="Upto3" ColumnName="Upto3" />
+          <ScalarProperty Name="Upto2" ColumnName="Upto2" />
+          <ScalarProperty Name="Upto1" ColumnName="Upto1" />
+          <ScalarProperty Name="FreeCash" ColumnName="FreeCash" />
+          <ScalarProperty Name="Baldate" ColumnName="Baldate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AgeListing_old" FunctionName="Merlin_DataModel.Store.AgeListing_old">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.AgeListing_old_Result">
+          <ScalarProperty Name="customerRef" ColumnName="customerRef" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Over6" ColumnName="Over6" />
+          <ScalarProperty Name="Upto6" ColumnName="Upto6" />
+          <ScalarProperty Name="Upto5" ColumnName="Upto5" />
+          <ScalarProperty Name="Upto4" ColumnName="Upto4" />
+          <ScalarProperty Name="Upto3" ColumnName="Upto3" />
+          <ScalarProperty Name="Upto2" ColumnName="Upto2" />
+          <ScalarProperty Name="Upto1" ColumnName="Upto1" />
+          <ScalarProperty Name="FreeCash" ColumnName="FreeCash" />
+          <ScalarProperty Name="Baldate" ColumnName="Baldate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AgeListing_old2" FunctionName="Merlin_DataModel.Store.AgeListing_old2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.AgeListing_old2_Result">
+          <ScalarProperty Name="customerRef" ColumnName="customerRef" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CurrentBalance" ColumnName="CurrentBalance" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Over6" ColumnName="Over6" />
+          <ScalarProperty Name="Upto6" ColumnName="Upto6" />
+          <ScalarProperty Name="Upto5" ColumnName="Upto5" />
+          <ScalarProperty Name="Upto4" ColumnName="Upto4" />
+          <ScalarProperty Name="Upto3" ColumnName="Upto3" />
+          <ScalarProperty Name="Upto2" ColumnName="Upto2" />
+          <ScalarProperty Name="Upto1" ColumnName="Upto1" />
+          <ScalarProperty Name="FreeCash" ColumnName="FreeCash" />
+          <ScalarProperty Name="Baldate" ColumnName="Baldate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CreditsReport" FunctionName="Merlin_DataModel.Store.CreditsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.CreditsReport_Result">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="CreditNummber" ColumnName="CreditNummber" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Current" FunctionName="Merlin_DataModel.Store.Current">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.Current_Result">
+          <ScalarProperty Name="ActDate" ColumnName="ActDate" />
+          <ScalarProperty Name="InvOrCrNumber" ColumnName="InvOrCrNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="seq2" ColumnName="seq2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CustomerHistory" FunctionName="Merlin_DataModel.Store.CustomerHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.CustomerHistory_Result">
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="OurRef" ColumnName="OurRef" />
+          <ScalarProperty Name="DocDate" ColumnName="DocDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CustomerReport" FunctionName="Merlin_DataModel.Store.CustomerReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.CustomerReport_Result">
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DaySheet" FunctionName="Merlin_DataModel.Store.DaySheet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.DaySheet_Result">
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="suppliercode" ColumnName="suppliercode" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeleteAllStatements" FunctionName="Merlin_DataModel.Store.DeleteAllStatements" />
+    <FunctionImportMapping FunctionImportName="DeliveriesReport" FunctionName="Merlin_DataModel.Store.DeliveriesReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.DeliveriesReport_Result">
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SelYear" ColumnName="SelYear" />
+          <ScalarProperty Name="SelMonth" ColumnName="SelMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DeliveriesReport2" FunctionName="Merlin_DataModel.Store.DeliveriesReport2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.DeliveriesReport2_Result">
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SelYear" ColumnName="SelYear" />
+          <ScalarProperty Name="SelMonth" ColumnName="SelMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DiscountsReport" FunctionName="Merlin_DataModel.Store.DiscountsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.DiscountsReport_Result">
+          <ScalarProperty Name="CustRef" ColumnName="CustRef" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="DateOfDiscount" ColumnName="DateOfDiscount" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="sortseq" ColumnName="sortseq" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="FindPoduct" FunctionName="Merlin_DataModel.Store.FindPoduct">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.FindPoduct_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="ProductGroupID" ColumnName="ProductGroupID" />
+          <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
+          <ScalarProperty Name="SizeID" ColumnName="SizeID" />
+          <ScalarProperty Name="NeckFinishID" ColumnName="NeckFinishID" />
+          <ScalarProperty Name="FeatureID" ColumnName="FeatureID" />
+          <ScalarProperty Name="AECID" ColumnName="AECID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="PriceUnit" ColumnName="PriceUnit" />
+          <ScalarProperty Name="PerPallet" ColumnName="PerPallet" />
+          <ScalarProperty Name="PalletID" ColumnName="PalletID" />
+          <ScalarProperty Name="Inactive" ColumnName="Inactive" />
+          <ScalarProperty Name="InactiveNotes" ColumnName="InactiveNotes" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="WeightID" ColumnName="WeightID" />
+          <ScalarProperty Name="ColourID" ColumnName="ColourID" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetCustomer" FunctionName="Merlin_DataModel.Store.GetCustomer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.GetCustomer_Result">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="GetHaulierID" FunctionName="Merlin_DataModel.Store.GetHaulierID" />
+    <FunctionImportMapping FunctionImportName="GetPriceLists" FunctionName="Merlin_DataModel.Store.GetPriceLists" />
+    <FunctionImportMapping FunctionImportName="HasBalanceP" FunctionName="Merlin_DataModel.Store.HasBalanceP" />
+    <FunctionImportMapping FunctionImportName="HasBalanceP_Old" FunctionName="Merlin_DataModel.Store.HasBalanceP_Old" />
+    <FunctionImportMapping FunctionImportName="HasOrderedP" FunctionName="Merlin_DataModel.Store.HasOrderedP" />
+    <FunctionImportMapping FunctionImportName="HasOrderedP_Old" FunctionName="Merlin_DataModel.Store.HasOrderedP_Old" />
+    <FunctionImportMapping FunctionImportName="InvoicesReport" FunctionName="Merlin_DataModel.Store.InvoicesReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.InvoicesReport_Result">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="DateOfInvoice" ColumnName="DateOfInvoice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="sortseq" ColumnName="sortseq" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OIPerformance" FunctionName="Merlin_DataModel.Store.OIPerformance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.OIPerformance_Result">
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="suppliercode" ColumnName="suppliercode" />
+          <ScalarProperty Name="productdescription" ColumnName="productdescription" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="OrderHistory" FunctionName="Merlin_DataModel.Store.OrderHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.OrderHistory_Result">
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="DealTypeID" ColumnName="DealTypeID" />
+          <ScalarProperty Name="CustomerOrderReference" ColumnName="CustomerOrderReference" />
+          <ScalarProperty Name="Collection" ColumnName="Collection" />
+          <ScalarProperty Name="HaulierID" ColumnName="HaulierID" />
+          <ScalarProperty Name="OrderStatusID" ColumnName="OrderStatusID" />
+          <ScalarProperty Name="VATTypeID" ColumnName="VATTypeID" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="CollectionReference" ColumnName="CollectionReference" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="Transport" ColumnName="Transport" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="OrderTotal" ColumnName="OrderTotal" />
+          <ScalarProperty Name="DiscountPercent" ColumnName="DiscountPercent" />
+          <ScalarProperty Name="DiscountValue" ColumnName="DiscountValue" />
+          <ScalarProperty Name="EarlyDiscountPaymentDate" ColumnName="EarlyDiscountPaymentDate" />
+          <ScalarProperty Name="DiscountType" ColumnName="DiscountType" />
+          <ScalarProperty Name="DiscountApplied" ColumnName="DiscountApplied" />
+          <ScalarProperty Name="DispatchMethodID" ColumnName="DispatchMethodID" />
+          <ScalarProperty Name="OrderNotes" ColumnName="OrderNotes" />
+          <ScalarProperty Name="DateCancelled" ColumnName="DateCancelled" />
+          <ScalarProperty Name="CancellationReasonID" ColumnName="CancellationReasonID" />
+          <ScalarProperty Name="CancellationNote" ColumnName="CancellationNote" />
+          <ScalarProperty Name="OrderIssues" ColumnName="OrderIssues" />
+          <ScalarProperty Name="AddressID" ColumnName="AddressID" />
+          <ScalarProperty Name="DealNumber" ColumnName="DealNumber" />
+          <ScalarProperty Name="DeliveryDate" ColumnName="DeliveryDate" />
+          <ScalarProperty Name="Release" ColumnName="Release" />
+          <ScalarProperty Name="Reg" ColumnName="Reg" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="SupplierDepotID" ColumnName="SupplierDepotID" />
+          <ScalarProperty Name="OrderStatusID1" ColumnName="OrderStatusID1" />
+          <ScalarProperty Name="OrderStatusName" ColumnName="OrderStatusName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletBalance" FunctionName="Merlin_DataModel.Store.PalletBalance">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletBalance_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="MovDate" ColumnName="MovDate" />
+          <ScalarProperty Name="RetDate" ColumnName="RetDate" />
+          <ScalarProperty Name="Delivered" ColumnName="Delivered" />
+          <ScalarProperty Name="Returned" ColumnName="Returned" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="BoughtIn" ColumnName="BoughtIn" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Owing" ColumnName="Owing" />
+          <ScalarProperty Name="PalletMovementID" ColumnName="PalletMovementID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletCredit" FunctionName="Merlin_DataModel.Store.PalletCredit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletCredit_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RetDate" ColumnName="RetDate" />
+          <ScalarProperty Name="Delivered" ColumnName="Delivered" />
+          <ScalarProperty Name="Returned" ColumnName="Returned" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="BoughtIn" ColumnName="BoughtIn" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Owing" ColumnName="Owing" />
+          <ScalarProperty Name="PriceUnit" ColumnName="PriceUnit" />
+          <ScalarProperty Name="PalletMovementID" ColumnName="PalletMovementID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletMovementsReport" FunctionName="Merlin_DataModel.Store.PalletMovementsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletMovementsReport_Result">
+          <ScalarProperty Name="CustomerRef" ColumnName="CustomerRef" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Issued" ColumnName="Issued" />
+          <ScalarProperty Name="Returned" ColumnName="Returned" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="BoughtIn" ColumnName="BoughtIn" />
+          <ScalarProperty Name="WriteOnOff" ColumnName="WriteOnOff" />
+          <ScalarProperty Name="TransferredInOut" ColumnName="TransferredInOut" />
+          <ScalarProperty Name="Owing" ColumnName="Owing" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletMovementSummary" FunctionName="Merlin_DataModel.Store.PalletMovementSummary">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletMovementSummary_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Issued" ColumnName="Issued" />
+          <ScalarProperty Name="Returned" ColumnName="Returned" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="BoughtIn" ColumnName="BoughtIn" />
+          <ScalarProperty Name="WriteOnOff" ColumnName="WriteOnOff" />
+          <ScalarProperty Name="Owing" ColumnName="Owing" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletTransfer" FunctionName="Merlin_DataModel.Store.PalletTransfer">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletTransfer_Result">
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="RetDate" ColumnName="RetDate" />
+          <ScalarProperty Name="Delivered" ColumnName="Delivered" />
+          <ScalarProperty Name="Returned" ColumnName="Returned" />
+          <ScalarProperty Name="Balance" ColumnName="Balance" />
+          <ScalarProperty Name="Refunded" ColumnName="Refunded" />
+          <ScalarProperty Name="BoughtIn" ColumnName="BoughtIn" />
+          <ScalarProperty Name="Pending" ColumnName="Pending" />
+          <ScalarProperty Name="Owing" ColumnName="Owing" />
+          <ScalarProperty Name="PalletMovementID" ColumnName="PalletMovementID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PalletWriteOffs" FunctionName="Merlin_DataModel.Store.PalletWriteOffs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PalletWriteOffs_Result">
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="AL" ColumnName="AL" />
+          <ScalarProperty Name="ARD" ColumnName="ARD" />
+          <ScalarProperty Name="BC" ColumnName="BC" />
+          <ScalarProperty Name="MDV" ColumnName="MDV" />
+          <ScalarProperty Name="OI" ColumnName="OI" />
+          <ScalarProperty Name="SAV" ColumnName="SAV" />
+          <ScalarProperty Name="V" ColumnName="V" />
+          <ScalarProperty Name="VDA" ColumnName="VDA" />
+          <ScalarProperty Name="VET" ColumnName="VET" />
+          <ScalarProperty Name="WGG" ColumnName="WGG" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="ToDate" ColumnName="ToDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PaymentsReport" FunctionName="Merlin_DataModel.Store.PaymentsReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.PaymentsReport_Result">
+          <ScalarProperty Name="AccountNumber" ColumnName="AccountNumber" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="PaymentNummber" ColumnName="PaymentNummber" />
+          <ScalarProperty Name="DateOfPayment" ColumnName="DateOfPayment" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="sortseq" ColumnName="sortseq" />
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="Todate" ColumnName="Todate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PFn" FunctionName="Merlin_DataModel.Store.PFn" />
+    <FunctionImportMapping FunctionImportName="ProduceStatements" FunctionName="Merlin_DataModel.Store.ProduceStatements">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.ProduceStatements_Result">
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProductReport" FunctionName="Merlin_DataModel.Store.ProductReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.ProductReport_Result">
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Customername" ColumnName="Customername" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jun" ColumnName="Jun" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SelYear" ColumnName="SelYear" />
+          <ScalarProperty Name="SelMonth" ColumnName="SelMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ProductReport2" FunctionName="Merlin_DataModel.Store.ProductReport2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.ProductReport2_Result">
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Customername" ColumnName="Customername" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jum" ColumnName="Jum" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SelYear" ColumnName="SelYear" />
+          <ScalarProperty Name="SelMonth" ColumnName="SelMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ResetOrderDetails" FunctionName="Merlin_DataModel.Store.ResetOrderDetails" />
+    <FunctionImportMapping FunctionImportName="SalesInvoices" FunctionName="Merlin_DataModel.Store.SalesInvoices">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.SalesInvoices_Result">
+          <ScalarProperty Name="FromDate" ColumnName="FromDate" />
+          <ScalarProperty Name="Todate" ColumnName="Todate" />
+          <ScalarProperty Name="InvoiceNumber" ColumnName="InvoiceNumber" />
+          <ScalarProperty Name="CustomerRef" ColumnName="CustomerRef" />
+          <ScalarProperty Name="DateofInvoice" ColumnName="DateofInvoice" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VATCode" ColumnName="VATCode" />
+          <ScalarProperty Name="VATAmount" ColumnName="VATAmount" />
+          <ScalarProperty Name="InvoiceTotal" ColumnName="InvoiceTotal" />
+          <ScalarProperty Name="PaymentAmount" ColumnName="PaymentAmount" />
+          <ScalarProperty Name="PaidOn" ColumnName="PaidOn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Statements2" FunctionName="Merlin_DataModel.Store.Statements2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.Statements2_Result">
+          <ScalarProperty Name="ActDate" ColumnName="ActDate" />
+          <ScalarProperty Name="InvOrCrNumber" ColumnName="InvOrCrNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="seq2" ColumnName="seq2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Statements3" FunctionName="Merlin_DataModel.Store.Statements3">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.Statements3_Result">
+          <ScalarProperty Name="ActDate" ColumnName="ActDate" />
+          <ScalarProperty Name="InvOrCrNumber" ColumnName="InvOrCrNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="seq2" ColumnName="seq2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Statements3_old" FunctionName="Merlin_DataModel.Store.Statements3_old">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.Statements3_old_Result">
+          <ScalarProperty Name="ActDate" ColumnName="ActDate" />
+          <ScalarProperty Name="InvOrCrNumber" ColumnName="InvOrCrNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="seq2" ColumnName="seq2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="StatementsFrom" FunctionName="Merlin_DataModel.Store.StatementsFrom">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.StatementsFrom_Result">
+          <ScalarProperty Name="ActDate" ColumnName="ActDate" />
+          <ScalarProperty Name="InvOrCrNumber" ColumnName="InvOrCrNumber" />
+          <ScalarProperty Name="Reference" ColumnName="Reference" />
+          <ScalarProperty Name="Goods" ColumnName="Goods" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="Seq" ColumnName="Seq" />
+          <ScalarProperty Name="seq2" ColumnName="seq2" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="StockLevel" FunctionName="Merlin_DataModel.Store.StockLevel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.StockLevel_Result">
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="ColourID" ColumnName="ColourID" />
+          <ScalarProperty Name="SupplierCode" ColumnName="SupplierCode" />
+          <ScalarProperty Name="Pallets" ColumnName="Pallets" />
+          <ScalarProperty Name="Book" ColumnName="Book" />
+          <ScalarProperty Name="CostPrice" ColumnName="CostPrice" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="StockSheet" FunctionName="Merlin_DataModel.Store.StockSheet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.StockSheet_Result">
+          <ScalarProperty Name="MovementDate" ColumnName="MovementDate" />
+          <ScalarProperty Name="StockMovementID" ColumnName="StockMovementID" />
+          <ScalarProperty Name="StockMovementTypeID" ColumnName="StockMovementTypeID" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Pallet" ColumnName="Pallet" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="SumByStatementMonth" FunctionName="Merlin_DataModel.Store.SumByStatementMonth" />
+    <FunctionImportMapping FunctionImportName="SupplierReport" FunctionName="Merlin_DataModel.Store.SupplierReport">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.SupplierReport_Result">
+          <ScalarProperty Name="SupplierName" ColumnName="SupplierName" />
+          <ScalarProperty Name="ProductDescription" ColumnName="ProductDescription" />
+          <ScalarProperty Name="Jan" ColumnName="Jan" />
+          <ScalarProperty Name="Feb" ColumnName="Feb" />
+          <ScalarProperty Name="Mar" ColumnName="Mar" />
+          <ScalarProperty Name="Apr" ColumnName="Apr" />
+          <ScalarProperty Name="May" ColumnName="May" />
+          <ScalarProperty Name="Jum" ColumnName="Jum" />
+          <ScalarProperty Name="Jul" ColumnName="Jul" />
+          <ScalarProperty Name="Aug" ColumnName="Aug" />
+          <ScalarProperty Name="Sep" ColumnName="Sep" />
+          <ScalarProperty Name="Oct" ColumnName="Oct" />
+          <ScalarProperty Name="Nov" ColumnName="Nov" />
+          <ScalarProperty Name="Dec" ColumnName="Dec" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SelYear" ColumnName="SelYear" />
+          <ScalarProperty Name="SelMonth" ColumnName="SelMonth" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="VATOutput" FunctionName="Merlin_DataModel.Store.VATOutput">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Merlin_DataModel.VATOutput_Result">
+          <ScalarProperty Name="seq" ColumnName="seq" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="VAT" ColumnName="VAT" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Month" ColumnName="Month" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

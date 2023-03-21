@@ -1,0 +1,112 @@
+﻿@model IEnumerable<Merlin_web_Application.Models.Supplier>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    if(Session["UserName"]==null)
+    {
+        Response.Redirect("~/Account/Login", false);
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Suppliers</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Suppliers DataTable </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SupplierName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.FirstName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SurName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.EmailAddress)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.LandlineNumber)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.MobileNumber)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Reference)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Active)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.VATNo)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Notes)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SupplierName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.FirstName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.SurName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LandlineNumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MobileNumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Reference)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Active)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.VATNo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Notes)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = item.SupplierID }, new { @class = "btn btn-primary" }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.SupplierID }, new { @class = "btn btn-success" }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.SupplierID }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

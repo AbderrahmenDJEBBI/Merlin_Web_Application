@@ -1,0 +1,195 @@
+﻿@model IEnumerable<Merlin_web_Application.Models.Customer>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    if (Session["UserName"] == null)
+    {
+        Response.Redirect("~/Account/Login", false);
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Customers</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Customers DataTable </h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerRef)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.StandardPriceList)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Collection)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerNotes)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerComments)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerVATNumber)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ContactName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ContactTelephone)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.ContactEmail)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.OnHold)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DateonHold)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.OnHoldReason)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.TermsDiscountPercentage)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Active)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.SupplierDepot.SupplierName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Customer1.CustomerRef)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Customer2.CustomerRef)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Customer11.CustomerRef)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.Customer3.CustomerRef)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerGroup.CustomerGroupName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.CustomerType.CustomerTypeName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.DealType.DealTypeName)
+                            </th>
+                            <th>
+                                @Html.DisplayNameFor(model => model.PaymentMethod.PaymentMethodName)
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerRef)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StandardPriceList)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Collection)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerNotes)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerComments)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerVATNumber)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ContactName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ContactTelephone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.ContactEmail)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OnHold)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DateonHold)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OnHoldReason)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.TermsDiscountPercentage)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Active)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.SupplierDepot.SupplierName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Customer1.CustomerRef)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Customer2.CustomerRef)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Customer11.CustomerRef)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Customer3.CustomerRef)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerGroup.CustomerGroupName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerType.CustomerTypeName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.DealType.DealTypeName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PaymentMethod.PaymentMethodName)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.CustomerID }, new { @class = "btn btn-primary" }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.CustomerID }, new { @class = "btn btn-success" }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.CustomerID }, new { @class = "btn btn-danger" })
+                            </td>
+                        </tr>
+                    }
+
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

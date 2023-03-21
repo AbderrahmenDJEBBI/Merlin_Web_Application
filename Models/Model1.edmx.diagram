@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bc69a448aeef4f0ea0277fb5e0a5a18e" Name="Diagram1">
+        <EntityTypeShape EntityType="Merlin_DataModel.AccessGroup" Width="1.5" PointX="11.25" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Address" Width="1.5" PointX="7.5" PointY="48.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.AddressType" Width="1.5" PointX="5.25" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.CancellationReason" Width="1.5" PointX="13.5" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Colour" Width="1.5" PointX="3.75" PointY="29.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Credit" Width="1.5" PointX="7.5" PointY="41.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.CreditReason" Width="1.5" PointX="5.25" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Currency" Width="1.5" PointX="5.25" PointY="62.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Customer" Width="1.5" PointX="5.25" PointY="46.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.CustomerGroup" Width="1.5" PointX="3" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.CustomerType" Width="1.5" PointX="3" PointY="54.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.DealNumber" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.DealType" Width="1.5" PointX="3" PointY="60.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.DispatchMethod" Width="1.5" PointX="13.5" PointY="61.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Feature" Width="1.5" PointX="3.75" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Haulier" Width="1.5" PointX="13.5" PointY="63.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Invoice" Width="1.5" PointX="12.75" PointY="50.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.InvoiceDetail" Width="1.5" PointX="8.25" PointY="33.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.InvoiceStatus" Width="1.5" PointX="10.5" PointY="40.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.InvoiceType" Width="1.5" PointX="10.5" PointY="56.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.NeckFinish" Width="1.5" PointX="3.75" PointY="40.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.OldPasswords" Width="1.5" PointX="11.25" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Order" Width="1.5" PointX="15.75" PointY="46.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.OrderDetail" Width="1.5" PointX="11.25" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.OrderStatus" Width="1.5" PointX="13.5" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PalletMovement" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PalletMovementType" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PartielCredit" Width="1.5" PointX="10.25" PointY="42.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PasswordPolicy" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Payment" Width="1.5" PointX="10.5" PointY="51.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PaymentAllocation" Width="1.5" PointX="15" PointY="56.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PaymentMethod" Width="1.5" PointX="3" PointY="62.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Permission" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.PriceList" Width="1.5" PointX="10.25" PointY="46" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Product" Width="1.5" PointX="6" PointY="32.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.ProductGroup" Width="1.5" PointX="3.75" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Shipment" Width="1.5" PointX="18" PointY="49.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.ShipmentItem" Width="1.5" PointX="10.5" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.ShipmentStatus" Width="1.5" PointX="15.75" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Size" Width="1.5" PointX="3.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Stock" Width="1.5" PointX="8.25" PointY="54.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.StockComments" Width="1.5" PointX="12.5" PointY="45.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.StockMovements" Width="1.5" PointX="13.25" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.StockMovementType" Width="1.5" PointX="11" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.StockType" Width="1.5" PointX="1.5" PointY="43.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Supplier" Width="1.5" PointX="0.75" PointY="34.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.SupplierDepot" Width="1.5" PointX="3" PointY="48.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.TempStatements" Width="1.5" PointX="7.5" PointY="60.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.User" Width="1.5" PointX="9" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.VATRate" Width="1.5" PointX="7.5" PointY="65.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.VATType" Width="1.5" PointX="5.25" PointY="65.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.weight" Width="1.5" PointX="3.75" PointY="57.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Client" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Merlin_DataModel.Company" Width="1.5" PointX="2.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="Merlin_DataModel.FK_AccessGroup_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Address_AddressType" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Address_Currency" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Address_VATType" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_Address" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_AddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_AddressID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_CancellationReasonID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_Colour" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Credit_CreditReasonID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Credit_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Credit_InvoiceID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Credit_PalletMovementID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Credit_PaymentMethodID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_CreditID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_CurrencyID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_CurrencyID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Payment_CurrencyID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_CollectSupplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_Customer1" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_CustomerGroupe" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_CustomerTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_DealType" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Customer_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PartielCredit_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Payment_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PriceList_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockComments_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockMovements_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_TempStatements_CustomerID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_DealTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_DispatchMethodID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_Feature" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_Haulier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_InvoiceStatusID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_InvoiceTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_OrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Invoice_VATTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_InvoiceDetail_InvoiceID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PaymentAllocation_InvoiceID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.t" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_InvoiceDetail_InvoiceDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_InvoiceDetail_OrderDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_InvoiceDetail_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_ShipmentItem_InvoiceLine" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockComments_InvoiceDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_NeckFinish" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_OldPasswords_User" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_OrderStatusID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_SupplierDepot" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Order_VATTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_OrderDetail_OrderID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Shipment_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_OrderDetail_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_OrderDetail_UserID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_PalletMovementTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_ReturnedToSupplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_ShipmentID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PalletMovement_SupplierID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PartielCredit_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Payment_PaymentMethode" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PriceList_Editedby" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PriceList_ProductID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_PriceList_PSupplierDepotID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_ProductGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_Size" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Product_Weight" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Stock_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockComments_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockMovements_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_ProductGroup_StockType" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_Shipment_ShipmentStatusID" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockMovements_StockMovementsType" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_StockMovements_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_SupplierDepot_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_SupplierDepot_SupplierDepot" ManuallyRouted="false" />
+        <AssociationConnector Association="Merlin_DataModel.FK_VATRate_VATTypeID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
